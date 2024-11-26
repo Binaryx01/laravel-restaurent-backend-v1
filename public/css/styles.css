@@ -1,0 +1,299 @@
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Header Section */
+.header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.header .logo {
+    max-width: 120px;
+}
+
+.header .social-icons {
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.header .social-icons:hover {
+    color: #f1c40f;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 0;
+}
+
+.navbar .navbar-brand {
+    color: #343a40;
+    font-size: 24px;
+}
+
+.navbar .nav-link {
+    color: #343a40;
+}
+
+.navbar .nav-link:hover {
+    color: #f1c40f;
+}
+
+/* Head and nav ends here Section */
+
+/* hero section starts here */
+
+.hero {
+    background-image: url('img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+    min-height: 60vh; /* Ensures full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Aligns items in a column */
+}
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background-color: #d4af37;
+    color: black;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+.hero .btn:hover {
+    background-color: #fff;
+}
+
+
+
+/* header and Book a table section is done */
+
+
+ /* Services Section */
+
+            .serviceh1 {
+            text-align: center;
+            font-family: 'lato', sans-serif;
+            font-size: 3em;
+            font-weight: bold;
+            color: #333;
+            margin-top: 3%;
+        }
+    .services {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background-color: #f7f7f7;
+    }
+    .service-item {
+      width: 25%;
+      text-align: center;
+    }
+    .service-item img {
+      border-radius: 50%;
+      max-height: 150px;
+      margin-bottom: 15px;
+    }
+    .service-item h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+
+
+ /* Services Section ends*/
+
+
+/* Menu Section */
+    .menu {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .menu h2 {
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .menu-item {
+      display: inline-block;
+      width: 30%;
+      margin: 10px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .menu-item:hover {
+      transform: scale(1.05);
+    }
+    .menu-item img {
+      max-height: 200px;
+      object-fit: cover;
+    }
+    .menu-item h3 {
+      font-size: 22px;
+      padding: 15px;
+      background-color: #333;
+      color: white;
+    }
+    .menu-item p {
+      padding: 15px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .menu-link {
+      text-decoration: none; /* Removes the underline */
+      color: white; /* Makes the text white */
+    }
+
+    .menu-link:hover {
+      color: yellow; /* Changes color on hover (optional, adjust as needed) */
+    }
+
+
+/*testimonial section */
+
+/* Testimonials Section */
+    .testimonials {
+      background-color: #f7f7f7;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .testimonials h2 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .testimonial-item {
+      width: 30%;
+      display: inline-block;
+      margin: 0 10px;
+      text-align: left;
+    }
+    .testimonial-item p {
+      font-size: 18px;
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+    .testimonial-item span {
+      font-weight: bold;
+    }
+
+
+    /* Footer Section */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services .row {
+        text-align: center;
+    }
+
+    .menu-item {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Style for the menu section */
+.menu {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.menu h2 {
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.menu-items-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.menu-item {
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.menu-item h3 {
+  font-size: 1.5em;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-item p {
+  color: #7f8c8d;
+  font-size: 1em;
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-link:hover {
+  color: #2980b9;
+}

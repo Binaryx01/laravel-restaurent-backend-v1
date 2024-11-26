@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; /* Align sidebar and content side by side */
+    font-family: Arial, sans-serif; /* Set font */
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px; /* Width of the sidebar */
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 20px; /* Padding around the links */
+    height: 100vh; /* Full height of the viewport */
+    position: fixed; /* Fix the sidebar to the left */
+    overflow-y: auto; /* Allow scrolling if content exceeds viewport */
+}
+
+/* Content area styles */
+.content {
+    margin-left: 220px; /* Add margin to the left to avoid being covered by the sidebar */
+    display: flex; /* Enable flex layout for sections */
+    flex-direction: row; /* Align items in a row */
+    flex-wrap: nowrap; /* Prevent wrapping of sections */
+    width: calc(100% - 220px); /* Take full width minus sidebar */
+}
+
+
+
+/* Link styles in the sidebar */
+.sidebar a {
+    display: block; /* Make each link a block element */
+    color: #333; /* Text color for links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for links */
+    margin-bottom: 10px; /* Space between links */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for links */
+.sidebar a:hover {
+    background-color: #ddd; /* Change background color on hover */
+}
